@@ -7,21 +7,15 @@ main:
   - name: Bio
     url: /
     weight: 10
-  - name: Papers
-    url: /#papers
+  - name: Portfolio
+    url: /#projects
     weight: 11
-  - name: Talks
-    url: /#talks
-    weight: 12
-  - name: News
-    url: /#news
-    weight: 13
   - name: Experience
     url: experience/
     weight: 20
   - name: Projects
     url: projects/
     weight: 30
-  - name: Courses
-    url: courses/
+  - name: GitHub
+    url: https://github.com/harjaskaur
     weight: 40

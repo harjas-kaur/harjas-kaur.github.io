@@ -1,15 +1,16 @@
 ---
-title: PyTorch
+title: Bakery Website
 date: 2023-10-26
 links:
   - type: site
-    url: https://github.com/pytorch/pytorch
+    url: https://github.com/harjaskaur/Bakery-Website.github.io
 tags:
-  - Hugo
-  - HugoBlox
-  - Markdown
+  - HTML
+  - CSS
+  - Responsive Design
+  - Branding
 ---
 
-PyTorch is a Python package that provides tensor computation (like NumPy) with strong GPU acceleration.
+A bakery-themed web design project exploring responsive layouts, storytelling, and visually engaging landing pages.
 
 <!--more-->

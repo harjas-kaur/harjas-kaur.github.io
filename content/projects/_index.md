@@ -1,6 +1,6 @@
 ---
 title: 'Projects'
-date: 2024-05-19
+date: 2026-09-01
 type: landing
 
 # Page sections
@@ -8,7 +8,7 @@ sections:
   - block: collection
     content:
       title: Selected Projects
-      text: I enjoy making things. Here are a selection of projects that I have worked on over the years.
+      text: I enjoy building practical web experiences, data-driven tools, and interactive product ideas. Here are some of the projects I’ve shipped and explored on GitHub.
       filters:
         folders:
           - projects

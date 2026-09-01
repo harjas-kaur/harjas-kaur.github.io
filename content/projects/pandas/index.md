@@ -1,15 +1,16 @@
 ---
-title: Pandas
+title: MotoVibez
 date: 2023-10-26
 links:
   - type: site
-    url: https://github.com/pandas-dev/pandas
+    url: https://github.com/harjaskaur/MotoVibez
 tags:
-  - Hugo
-  - HugoBlox
-  - Markdown
+  - E-commerce
+  - React
+  - Front-end
+  - Web Design
 ---
 
-Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.
+MotoVibez is an e-commerce website project focused on a polished shopping experience and product-driven UI design.
 
 <!--more-->

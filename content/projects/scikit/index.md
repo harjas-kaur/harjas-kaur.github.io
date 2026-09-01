@@ -1,15 +1,16 @@
 ---
-title: scikit-learn
+title: Front-end Ideas
 date: 2023-10-26
 links:
   - type: site
-    url: https://github.com/scikit-learn/scikit-learn
+    url: https://github.com/harjaskaur/Front-end-ideas
 tags:
-  - Hugo
-  - HugoBlox
-  - Markdown
+  - UI Experiments
+  - JavaScript
+  - Design Systems
+  - Creative Coding
 ---
 
-scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.
+This repository gathers front-end ideas and UI experiments, showcasing Harjas’s creative exploration of modern interface patterns.
 
 <!--more-->
