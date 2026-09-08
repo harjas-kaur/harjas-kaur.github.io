@@ -252,6 +252,61 @@ a {
   color: var(--text-secondary);
   margin-top: 0.5rem;
 }
+.hero-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  flex: 1 1 480px;
+}
+
+.side-pane {
+  flex: 0 1 280px;
+  padding: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.side-pane-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.side-pane-text {
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0.5rem 0 1rem;
+  opacity: 0.85;
+}
+
+.side-pane-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.side-pane-tags span {
+  font-family: "DM Mono", monospace;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 999px;
+}
+
+@media (max-width: 720px) {
+  .side-pane {
+    flex-basis: 100%;
+  }
+}
 
 @media (max-width: 768px) {
   .about-layout {
