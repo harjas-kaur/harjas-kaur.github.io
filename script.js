@@ -24,7 +24,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal').forEach((element) => revealObserver.observe(element));
 
 const copyButton = document.querySelector('.copy-email');
-copyButton.addEventListener('click', async () => {
+if (copyButton) copyButton.addEventListener('click', async () => {
   try {
     await navigator.clipboard.writeText(copyButton.dataset.email);
     copyButton.querySelector('span').textContent = 'Copied';

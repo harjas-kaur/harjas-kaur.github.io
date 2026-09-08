@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harjas Kaur | Research</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand">Harjas Kaur</a>
+      <div class="nav-links"><a href="index.html">Home</a><a href="research.html" class="active">Research</a><a href="about.html">About</a></div>
+      <a class="small-link" href="https://github.com/harjas-kaur" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <header class="page-header">
+      <h2>Selected Research & Projects</h2>
+      <p>Research and implementation studies in hardware security, computer architecture, and ASIC design.</p>
+    </header>
+
+    <div class="grid-layout">
+      <article class="card">
+        <span class="tag">Thesis · PUFs</span>
+        <h3>Physics-Informed PUF Modeling</h3>
+        <p>Extended the PyPUF simulation pipeline with an Alpha-Power-Law delay model. Sweeps covered 0–140°C and 0.5–3V, achieving close correlation with a 500-run Cadence Virtuoso baseline.</p>
+        <a href="https://github.com/harjas-kaur/pypuf_TandV" class="card-link" target="_blank">View on GitHub →</a>
+      </article>
+
+      <article class="card">
+        <span class="tag">Thesis · Architecture</span>
+        <h3>Cache Line Pinning in gem5</h3>
+        <p>Reimplemented Cache Line Pinning for ARM AArch64 full-system Linux. Traced side-channel risks and identified how excessive pin accumulation can starve replacement and hang kernel boot.</p>
+        <a href="https://github.com/harjas-kaur" class="card-link" target="_blank">View Profile →</a>
+      </article>
+
+      <article class="card">
+        <span class="tag">Internship · Physical Design</span>
+        <h3>Floorplan Review Automation</h3>
+        <p>At Microsoft, built a Synopsys Fusion Compiler hierarchy extraction and JSON-to-Visio pipeline to support floorplan review and diff tracking for AI accelerator designs.</p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Independent · ASIC</span>
+        <h3>AXI-Lite to APB Bridge</h3>
+        <p>Compared baseline and pipelined AXI-Lite to APB bridges using SystemVerilog Assertions (SVA). Executed an open-source RTL-to-GDSII flow via OpenLane and Sky130.</p>
+        <a href="https://github.com/harjas-kaur/asic_projects" class="card-link" target="_blank">View on GitHub →</a>
+      </article>
+
+      <article class="card">
+        <span class="tag">Independent · C++</span>
+        <h3>Cache-Set Remapping</h3>
+        <p>Implemented hot/cold set classification in ChampSim. Documented how dynamic remapping without line migration produces cold-start miss storms that saturate DRAM bandwidth.</p>
+        <a href="https://github.com/harjas-kaur/champsim-remapping" class="card-link" target="_blank">View on GitHub →</a>
+      </article>
+
+      <article class="card">
+        <span class="tag">Coursework · Embedded</span>
+        <h3>RISC-V RV32I Processor</h3>
+        <p>Designed a 5-stage pipelined RV32I core with forwarding, hazard handling, a Branch Target Buffer, and a 2-bit saturating predictor. Verified using Icarus Verilog and GTKWave.</p>
+        <a href="https://github.com/harjas-kaur/CS204_Project" class="card-link" target="_blank">View on GitHub →</a>
+      </article>
+    </div>
+    <section class="figures-section">
+      <header class="page-header"><h2>Figures from the repositories</h2><p>Selected layouts and waveforms linked to their original projects.</p></header>
+      <div class="figure-grid"><figure><a href="https://github.com/harjas-kaur/asic_projects" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/harjas-kaur/asic_projects/main/images/pipelined_gds.png" alt="Pipelined AXI-Lite to APB bridge GDS layout"></a><figcaption>Sky130 · Pipelined bridge GDSII</figcaption></figure><figure><a href="https://github.com/harjas-kaur/asic_projects" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/harjas-kaur/asic_projects/main/images/pipelined_routing.png" alt="Routed layout of the pipelined bridge"></a><figcaption>Physical design · Detailed routing</figcaption></figure><figure><a href="https://github.com/harjas-kaur/CS204_Project" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/harjas-kaur/CS204_Project/main/images/branch_pred_gtk.png" alt="GTKWave branch prediction waveform"></a><figcaption>RV32I · BTB prediction waveform</figcaption></figure><figure><a href="https://github.com/harjas-kaur/CS204_Project" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/harjas-kaur/CS204_Project/main/images/mispredE-1.png" alt="GTKWave branch misprediction recovery waveform"></a><figcaption>Pipeline verification · Recovery</figcaption></figure></div>
+    </section>
+  </main>
+</body>
+</html>

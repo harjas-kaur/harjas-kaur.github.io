@@ -3,153 +3,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Harjas Kaur is a silicon engineering researcher working across hardware security, computer architecture, and ASIC design.">
+  <meta name="description" content="Harjas Kaur - undergraduate researcher in computer architecture, hardware security, and VLSI design.">
   <title>Harjas Kaur | Computer Architecture & Hardware Security</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="site-shell">
-    <header class="topbar">
-      <a class="wordmark" href="#top" aria-label="Harjas Kaur home"><span>HK</span><strong>Harjas Kaur</strong></a>
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#work">Selected work</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <a class="header-link" href="https://github.com/harjas-kaur" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
-    </header>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand">Harjas Kaur</a>
+      <div class="nav-links"><a href="index.html" class="active">Home</a><a href="research.html">Research</a><a href="about.html">About</a></div>
+      <a class="small-link" href="https://github.com/harjas-kaur" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </div>
+  </nav>
 
-    <main id="top">
-      <section class="hero section-pad">
-        <div class="hero-copy reveal">
-          <p class="eyebrow"><span class="status-dot"></span> Undergraduate researcher · IIT Ropar</p>
-          <h1>Computer architecture, hardware security, and VLSI design.</h1>
-          <p class="hero-intro">I study how architectural decisions interact with physical hardware. My current work includes PUF reliability under environmental variation, cache-based defenses against RowHammer, and reproducible RTL-to-GDSII experiments.</p>
-          <div class="hero-actions">
-            <a class="button button-dark" href="#work">Read the research <span>↓</span></a>
-            <a class="text-link" href="mailto:harjaskaurbassi@gmail.com">Email me <span>↗</span></a>
-          </div>
-        </div>
-        <div class="hero-aside reveal reveal-delay">
-          <div class="signal-mark" aria-hidden="true">
-            <span class="signal-core"></span><span class="signal-ring ring-one"></span><span class="signal-ring ring-two"></span><span class="signal-ring ring-three"></span>
-          </div>
-          <p class="mono-label">RESEARCH INTERESTS</p>
-          <p class="signal-text">Computer architecture<br>Hardware security<br>Memory subsystems</p>
-          <div class="hero-rule"></div>
-          <p class="mono-label">01 / 04 &nbsp; SYSTEMS · SECURITY · SILICON</p>
-        </div>
-      </section>
-
-      <section class="metrics section-pad" aria-label="Research profile">
-        <div class="metric reveal"><strong>01</strong><span>IEEE ISVLSI<br>2026 short paper</span></div>
-        <div class="metric reveal"><strong>500</strong><span>Cadence Monte Carlo<br>baseline runs</span></div>
-        <div class="metric reveal"><strong>5</strong><span>research and<br>design studies</span></div>
-        <div class="metric reveal"><strong>7.55</strong><span>B.Tech CGPA<br>out of 10</span></div>
-      </section>
-
-      <section id="work" class="work section-pad">
-        <div class="section-heading reveal">
-          <p class="kicker">Selected work</p>
-          <h2>Selected <span>research</span><br>and projects.</h2>
-          <p class="section-summary">Projects are labeled by context so the scope and evidence behind each result remain visible.</p>
-        </div>
-        <div class="filter-bar reveal" role="group" aria-label="Filter projects">
-          <button class="filter active" data-filter="all">All work</button>
-          <button class="filter" data-filter="security">Security</button>
-          <button class="filter" data-filter="architecture">Architecture</button>
-          <button class="filter" data-filter="asic">ASIC / RTL</button>
-          <button class="filter" data-filter="coursework">Coursework</button>
-        </div>
-        <div class="project-grid">
-          <article class="project-card featured reveal" data-category="security">
-            <div class="card-top"><span class="project-number">01</span><span class="project-kind">Thesis · PUFs</span></div>
-            <h3>Physics-informed<br>PUF modeling</h3>
-            <p>Extended the PyPUF simulation pipeline with an Alpha-Power-Law delay model. Sweeps covered 0–140°C and 0.5–3V, with a 500-run Cadence Virtuoso baseline.</p>
-            <div class="card-footer"><span>Python · PyPUF · Cadence</span><a href="https://github.com/harjas-kaur/pypuf_TandV" target="_blank" rel="noreferrer" aria-label="View PUF project on GitHub">README ↗</a></div>
-          </article>
-          <article class="project-card reveal" data-category="architecture">
-            <div class="card-top"><span class="project-number">02</span><span class="project-kind">Thesis · Architecture</span></div>
-            <h3>Cache Line Pinning<br>in gem5</h3>
-            <p>Reimplemented Cache Line Pinning for ARM AArch64 full-system Linux and traced how excessive pin accumulation can starve replacement and hang boot.</p>
-            <div class="card-footer"><span>gem5 · ARMv8-A · DRAM</span><a href="https://github.com/harjas-kaur" target="_blank" rel="noreferrer" aria-label="View gem5 work on GitHub">Profile ↗</a></div>
-          </article>
-          <article class="project-card reveal" data-category="asic">
-            <div class="card-top"><span class="project-number">03</span><span class="project-kind">Independent · ASIC</span></div>
-            <h3>AXI-Lite → APB<br>bridge</h3>
-            <p>Compared baseline and pipelined AXI-Lite to APB bridges using SVA, OpenLane, OpenROAD, and Sky130; both implementations reached DRC-clean GDSII.</p>
-            <div class="card-footer"><span>SystemVerilog · OpenLane</span><a href="https://github.com/harjas-kaur/asic_projects" target="_blank" rel="noreferrer" aria-label="View ASIC project on GitHub">README ↗</a></div>
-          </article>
-          <article class="project-card reveal" data-category="architecture">
-            <div class="card-top"><span class="project-number">04</span><span class="project-kind">Independent · C++</span></div>
-            <h3>Cache-set<br>remapping</h3>
-            <p>Implemented hot/cold set classification and table-based redirection. The study documents why remapping without line migration produced cold-start miss waves.</p>
-            <div class="card-footer"><span>ChampSim · LLC · SPEC</span><a href="https://github.com/harjas-kaur/champsim-remapping" target="_blank" rel="noreferrer" aria-label="View cache remapping project on GitHub">README ↗</a></div>
-          </article>
-          <article class="project-card reveal" data-category="asic">
-            <div class="card-top"><span class="project-number">05</span><span class="project-kind">Internship · Physical design</span></div>
-            <h3>Floorplan review<br>automation</h3>
-            <p>At Microsoft, built Fusion Compiler hierarchy extraction and JSON-to-Visio generation to support floorplan review and diff tracking for AI accelerator designs.</p>
-            <div class="card-footer"><span>Fusion Compiler · Tcl · Python</span><a href="https://www.linkedin.com/in/harjas-kaur-bassi/" target="_blank" rel="noreferrer" aria-label="View LinkedIn profile">Experience ↗</a></div>
-          </article>
-          <article class="project-card reveal" data-category="coursework">
-            <div class="card-top"><span class="project-number">06</span><span class="project-kind">Coursework · Embedded</span></div>
-            <h3>RISC-V processor<br>and branch prediction</h3>
-            <p>Implemented a 5-stage RV32I pipeline with forwarding, hazard handling, a BTB, and a 2-bit saturating predictor; verified behavior with Icarus Verilog and GTKWave.</p>
-            <div class="card-footer"><span>Verilog · RV32I · GTKWave</span><a href="https://github.com/harjas-kaur/CS204_Project" target="_blank" rel="noreferrer" aria-label="View RISC-V project on GitHub">README ↗</a></div>
-          </article>
-        </div>
-      </section>
-
-      <section id="figures" class="figures section-pad">
-        <div class="section-heading reveal">
-          <p class="kicker">Figures from the repositories</p>
-          <h2>Work in <span>pictures.</span></h2>
-          <p class="section-summary">Selected layouts and waveforms, linked to the original GitHub project.</p>
-        </div>
-        <div class="figure-grid">
-          <figure class="figure-card reveal"><a href="https://github.com/harjas-kaur/asic_projects" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/harjas-kaur/asic_projects/main/images/pipelined_gds.png" alt="Pipelined AXI-Lite to APB bridge GDS layout"></a><figcaption><span>ASIC / Sky130</span><strong>Pipelined bridge GDSII</strong></figcaption></figure>
-          <figure class="figure-card reveal"><a href="https://github.com/harjas-kaur/asic_projects" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/harjas-kaur/asic_projects/main/images/pipelined_routing.png" alt="Routed layout of the pipelined bridge"></a><figcaption><span>Physical design</span><strong>Detailed routing view</strong></figcaption></figure>
-          <figure class="figure-card reveal"><a href="https://github.com/harjas-kaur/CS204_Project" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/harjas-kaur/CS204_Project/main/images/branch_pred_gtk.png" alt="GTKWave branch prediction waveform"></a><figcaption><span>RISC-V / GTKWave</span><strong>BTB prediction waveform</strong></figcaption></figure>
-          <figure class="figure-card reveal"><a href="https://github.com/harjas-kaur/CS204_Project" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/harjas-kaur/CS204_Project/main/images/mispredE-1.png" alt="GTKWave branch misprediction recovery waveform"></a><figcaption><span>Pipeline verification</span><strong>Misprediction recovery</strong></figcaption></figure>
-        </div>
-      </section>
-
-      <section id="about" class="about section-pad">
-        <div class="about-label reveal"><p class="kicker">A little context</p><span class="about-line"></span><p class="mono-label">02 / 04</p></div>
-        <div class="about-content reveal">
-          <h2>Research at the boundary<br>between <span>models</span> and hardware.</h2>
-          <p>I am completing a B.Tech in Electrical Engineering at IIT Ropar. My work has moved between analytical PUF models, microarchitectural defenses, and RTL-to-GDSII implementation. I am interested in studies where the assumptions of a model can be tested in a simulator, a toolchain, or a timing report.</p>
-          <div class="about-columns">
-            <div><p class="mono-label">FOCUS AREAS</p><p>Computer architecture<br>Hardware security<br>Microarchitectural defenses<br>Memory subsystems</p></div>
-              <div><p class="mono-label">METHODS & TOOLS</p><p>gem5 · ChampSim · SystemVerilog<br>OpenLane · OpenROAD · Cadence<br>C++ · Python · Linux</p></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="timeline section-pad">
-        <div class="section-heading reveal"><p class="kicker">Experience & education</p><h2>Context for the<br><span>work.</span></h2></div>
-        <div class="timeline-list">
-          <div class="timeline-item reveal"><span class="timeline-date">2026 — now</span><div><h3>Ixana AI</h3><p>Founder’s Office Associate · Silicon Engineering</p><small>Post-silicon validation support, technical proposals, and hardware systems documentation.</small></div></div>
-          <div class="timeline-item reveal"><span class="timeline-date">2025</span><div><h3>Microsoft</h3><p>Physical Design Intern · SCHIE</p><small>Automated physical-design review and floorplan diff tracking for AI accelerator flows.</small></div></div>
-          <div class="timeline-item reveal"><span class="timeline-date">2024</span><div><h3>NCCU · Taiwan</h3><p>TEEP Research Fellow</p><small>Built an async FastAPI pipeline for human-in-the-loop disaster image classification.</small></div></div>
-          <div class="timeline-item reveal"><span class="timeline-date">2022 — 2026</span><div><h3>IIT Ropar</h3><p>B.Tech · Electrical Engineering · CGPA 7.55 / 10</p><small>Undergraduate thesis with Dr. Neeraj Goel; varsity athletics captain and sports secretary.</small></div></div>
-        </div>
-      </section>
-
-      <section id="contact" class="contact section-pad reveal">
-        <p class="kicker">Open channel</p>
-        <h2>Have a hard problem<br>in <span>hardware?</span></h2>
-        <p class="contact-copy">Research collaboration, silicon engineering, or a thoughtful technical conversation. My inbox is open.</p>
-        <div class="contact-actions"><a class="button button-accent" href="mailto:harjaskaurbassi@gmail.com">Email Harjas <span>↗</span></a><button class="copy-email" type="button" data-email="harjaskaurbassi@gmail.com">harjaskaurbassi@gmail.com <span>Copy</span></button></div>
-        <div class="contact-meta"><a href="https://github.com/harjas-kaur" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/harjas-kaur-bassi/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://harjas-kaur.github.io" target="_blank" rel="noreferrer">Personal site ↗</a></div>
-      </section>
-    </main>
-    <footer class="footer"><span>© 2026 Harjas Kaur</span><span class="mono-label">BUILT FOR THE CURIOUS</span><a href="#top">Back to top ↑</a></footer>
-  </div>
-  <script src="script.js"></script>
+  <main class="container hero-section">
+    <div class="hero-content">
+      <p class="overline">Undergraduate researcher · IIT Ropar</p>
+      <h1>Computer architecture, hardware security, and VLSI design.</h1>
+      <p class="subtitle">I study how architectural decisions interact with physical hardware. My current work includes PUF reliability under environmental variation, cache-based defenses against RowHammer, and reproducible RTL-to-GDSII experiments.</p>
+      
+      <div class="action-buttons">
+        <a href="research.html" class="btn btn-primary">View Research</a>
+        <a href="about.html" class="btn btn-secondary">Background</a>
+      </div>
+      <div class="home-details"><span>Research interests: architecture · security · memory systems</span><a href="mailto:harjaskaurbassi@gmail.com">harjaskaurbassi@gmail.com ↗</a></div>
+    </div>
+  </main>
+  <section class="home-strip"><div><strong>01</strong><span>IEEE ISVLSI 2026<br>short paper</span></div><div><strong>500</strong><span>Cadence Monte Carlo<br>baseline runs</span></div><div><strong>7.55</strong><span>B.Tech CGPA<br>out of 10</span></div></section>
 </body>
 </html>
