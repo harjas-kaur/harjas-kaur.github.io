@@ -270,6 +270,93 @@ a {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
+.hero-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  flex: 1 1 480px;
+  min-width: 0;
+}
+
+.side-pane {
+  flex: 0 0 260px;
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.02);
+  box-sizing: border-box;
+}
+
+.side-pane-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1.25rem;
+  border: 3px solid rgba(0, 0, 0, 0.08);
+}
+
+.side-pane .overline {
+  margin-bottom: 0.5rem;
+}
+
+.side-pane-text {
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  margin: 0 0 1.25rem;
+  opacity: 0.85;
+}
+
+.side-pane-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.side-pane-tags span {
+  font-family: "DM Mono", monospace;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 999px;
+}
+
+.side-pane-btn {
+  display: inline-block;
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.6rem 1.25rem;
+  border-radius: 999px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+
+.side-pane-btn:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 720px) {
+  .side-pane {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
 
 @media (max-width: 640px) {
   .home-strip {
